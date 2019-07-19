@@ -2,7 +2,7 @@
 
 class EvaluationController < ApplicationController
   def result
-    render :text => "回答 = #{ans[0]}, #{ans[1]}"
+    render html: "回答 = #{params[:q1]}, #{params[:q2]}"
   end
 end
 
