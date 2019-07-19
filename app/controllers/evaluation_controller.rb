@@ -2,7 +2,7 @@
 
 class EvaluationController < ApplicationController
   def result
-    render html: "回答 = #{params[:q1-1]}, #{params[:q1-2]}, #{params[:q1-3]}"
+    render html: "回答 = #{params[:q11]}, #{params[:q12]}, #{params[:q13]}"
   end
 end
 
