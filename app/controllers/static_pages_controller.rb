@@ -1,7 +1,4 @@
 class StaticPagesController < ApplicationController
-  def check
-  end
-
-  def result
+  def help
   end
 end

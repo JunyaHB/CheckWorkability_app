@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'static_pages/help'
   get 'static_pages/check'
   get 'static_pages/result'
   resources :users
