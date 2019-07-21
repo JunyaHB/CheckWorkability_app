@@ -52,6 +52,13 @@ p {
 
 /* header */
 
+.navbar-brand {
+  background: url("/logoimage.png") no-repeat left center;
+  background-size: contain;
+  height: 50px;
+  width: 250px;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -61,6 +68,10 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  background: url("/logoimage.png") no-repeat left center;
+  background-size: contain;
+  height: 50px;
+  width: 250px;
 }
 
 #logo:hover {
