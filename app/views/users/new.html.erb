@@ -1,7 +1,7 @@
 <h1>適職診断開始！！</h1>
   
 <%= form_tag("/static_pages/check") do |f| %>
-  <%= f.text_field :email %>
+  <%= f.text_field_tag :email %>
   <%= f.submit "登録" %>
   <%= button_to "診断開始", {controller: 'static_pages', action: 'check'}, {method: :get} %>
 <% end %>
