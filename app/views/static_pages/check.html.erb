@@ -2,27 +2,35 @@
 
 <form method="post" action="/evaluation/result">
 <h3>問1<h3>
-<p>人と話すのが好きだ<p>
+<p>あなたの人付き合いのモットーに、一番近いことわざはどれですか？<p>
 <br/>
 
 <!--
 <%= radio_button 'q1', 'category', 'yes', {} %>はい
 <%= radio_button 'q1', 'category', 'no', {} %>いいえ
 -->
-<input type="radio" name="q1" value="yes">はい
-<input type="radio" name="q1" value="no">いいえ
-
+<input type="radio" name="q11" value="a">「去る者は追わず」<br />
+<input type="radio" name="q11" value="b">「袖触れ合うも他生の縁」<br />
+<input type="radio" name="q11" value="c">「親しきなかにも礼儀あり」<br />
+<input type="radio" name="q11" value="d">「情けは人のためならず」<br />
 
 <h3>問2<h3>
-<p>一人で作業するのが好きだ<p>
+<p>ドラえもんのキャラクターで、あなたがあまり好きでないのは、次の4人のうち誰ですか？<p>
 <br/>
-<!--
-<%= radio_button 'q2', 'category', 'yes', {} %>はい
-<%= radio_button 'q2', 'category', 'no', {} %>いいえ
--->
-<input type="radio" name="q2" value="yes">はい
-<input type="radio" name="q2" value="no">いいえ
-<br />
+
+<input type="radio" name="q12" value="a">ジャイアン<br />
+<input type="radio" name="q12" value="b">スネ夫<br />
+<input type="radio" name="q12" value="c">のび太<br />
+<input type="radio" name="q12" value="d">しずかちゃん<br />
+
+<h3>問3<h3>
+<p>あなたは責任ある仕事を任されました。先輩が手を貸してくれましたが、結局失敗。上司に対して「自分が悪かった」と謝る先輩の横で、あなたはどうしますか？<p>
+
+<input type="radio" name="q13" value="a">どちらが悪いということではなく、一緒に謝り続ける<br />
+<input type="radio" name="q13" value="b">黙って何も言わない<br />
+<input type="radio" name="q13" value="c">あくまでも先輩はフォローであり、責任は自分にあると謝る<br />
+<input type="radio" name="q13" value="d">先輩の教え方が悪かったと、上司に訴える<br />
+
 <%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post} %>
 </form>
 
