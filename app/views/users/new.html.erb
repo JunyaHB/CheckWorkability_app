@@ -2,6 +2,5 @@
   
 <%= form_for(@user) do |f| %>
   <%= f.text_field :email %>
-  <%= f.submit "登録" %>
-  <%= button_to "診断開始", {controller: 'static_pages_path', action: 'check'}, {method: :get} %>
+  <%= button_to "診断開始", {controller: 'static_pages', action: 'check'}, {method: :get} %>
 <% end %>
