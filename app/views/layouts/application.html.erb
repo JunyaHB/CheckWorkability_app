@@ -15,7 +15,7 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-	<%= link_to "", "#", id: "logo"  %>
+	<%= link_to "", {:controller => "users", :action => "new"}, id: "logo"  %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "会社概要", :controller => "static_pages", :action => "aboutus" %></li>
