@@ -1,6 +1,6 @@
 # README
 
-0724での改変
+fujikawa0724での改変
 上のバーを書き換えた。
 contact, aboutusのページを作った。
 helpページは消した。
