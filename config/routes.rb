@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'static_pages/contact'
   get 'evaluation/result'
-  get 'static_pages/help'
+  get 'static_pages/contact'
   get 'static_pages/check'
   get 'static_pages/result'
   get 'static_pages/aboutus'
