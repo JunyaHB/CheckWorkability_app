@@ -22,6 +22,7 @@ WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecat
 * ちゃんとしたテストを書く
 * 結果ページの内容をちゃんと書く
 * 会社概要、コンタクトページ
+* 動かすことを最優先にしたのでMVCの設計がぐちゃぐちゃなので整理する
 * 未回答の質問があるときにエラーを出す
 * 結果をDBに入れる、ここでRESTっぽい動きにできないか？
 * メールを送信するか、ツイッター連携
