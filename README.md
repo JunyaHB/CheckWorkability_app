@@ -10,6 +10,10 @@
 下のエラーが出るためにchromedriver-helperは削除、webdrivers に変更  
 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.  
 詳細 https://blog.tamesuu.com/2019/06/08/274/  
+* question1
+結果の詳細を追記
+* check.html.erb
+"忠誠心度チェック"の文字列を追記
 
 ## 24-Jul-2019までの実装
 * 最初から最後までの画面遷移には成功したので、一応動く物ができたと言えるようになった
