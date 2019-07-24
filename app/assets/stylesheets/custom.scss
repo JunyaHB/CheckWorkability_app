@@ -29,12 +29,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-h1 {
+h1.start {
   font-size: 4em;
   letter-spacing: -2px;
   margin-bottom: 50px;
   margin-top : 100px ;
 /**text-align: center;*/
+
 }
 
 h2 {
@@ -49,6 +50,33 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+p.question {
+  position: relative;
+  padding-left: 25px;
+  font-size: 17px;
+}
+
+p.question:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 25px transparent;
+  border-bottom: solid 25px red;
+}
+
+p.question:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 15px;
+  width: 65%;
+  border-bottom: solid 3px red;
 }
 
 p.discription{
