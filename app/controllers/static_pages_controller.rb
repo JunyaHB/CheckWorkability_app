@@ -1,4 +1,8 @@
 class StaticPagesController < ApplicationController
-  def help
+#  def help
+#  end
+  def aboutus
+  end
+  def contact
   end
 end

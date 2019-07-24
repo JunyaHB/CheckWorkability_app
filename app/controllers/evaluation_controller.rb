@@ -2,8 +2,12 @@
 
 class EvaluationController < ApplicationController
   def result
+<<<<<<< HEAD
     render html: "回答 = #{params[:q11]}, #{params[:q12]}, #{params[:q13]}"
     @evaluations = Evaluations.create(score: params[:q11],email: '')
+=======
+    #render html: "回答 = #{params[:q11]}, #{params[:q12]}, #{params[:q13]}, #{params[:q14]}, #{params[:q15]}, #{params[:q16]}"
+>>>>>>> master
   end
 
 #  def new
