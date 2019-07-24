@@ -1,14 +1,15 @@
 <h1>質問</h1>
 
+<!--
 <form method="post" action="/evaluation/result">
 <h3>問1<h3>
 <p>あなたの人付き合いのモットーに、一番近いことわざはどれですか？<p>
 <br/>
 
-<!--
+
 <%= radio_button 'q1', 'category', 'yes', {} %>はい
 <%= radio_button 'q1', 'category', 'no', {} %>いいえ
--->
+
 <input type="radio" name="q11" value="a">「去る者は追わず」<br />
 <input type="radio" name="q11" value="b">「袖触れ合うも他生の縁」<br />
 <input type="radio" name="q11" value="c">「親しきなかにも礼儀あり」<br />
@@ -32,6 +33,7 @@
 <input type="radio" name="q13" value="d">先輩の教え方が悪かったと、上司に訴える<br />
 
 <%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post} %>
+-->
 
 <%= form_for(@user, controller: 'evaluation', action: 'create', method: :post) do |f| %>
     <p>
