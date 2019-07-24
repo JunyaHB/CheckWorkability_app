@@ -6,7 +6,7 @@
 ---
 
 ## fujikawa0726での改変
-* Gemfile
+* Gemfile  
 下のエラーが出るためにchromedriver-helperは削除、webdrivers に変更  
 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.  
 詳細 https://blog.tamesuu.com/2019/06/08/274/  
