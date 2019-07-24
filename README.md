@@ -28,6 +28,8 @@ WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecat
 * メールを送信するか、ツイッター連携
 * 問題数を増やす
 * 選択肢の順番がランダムに入れ替わるようにする
+* セキュリティ面からの検討、例えばユーザ入力値のサニタイズが必要な箇所  
+とにかく動けばいいという視点で開発を急いだので、一般論としてセキュリティ面が不安
 
 ## 検討したけどたぶんボツになったこと
 * 最初にメールアドレスを入力させて、hidden属性のinputで値を渡す  
@@ -53,3 +55,10 @@ WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecat
 * /usersでDBを見たときにもscore1カラムを追加
 * editページにもscore1を追加
 * score1のupdateに対応
+
+## 経過
+* 当初は設計やドキュメントの作成を優先させた
+* 実装のめどがない機能の提案や、実装に手間がかかる仕様の提案が多かった気がする
+* デプロイして動くものを作ることを優先させた
+* 持ち寄ったデザインの改変と、機能の改変でマージさせるとうまく行った
+* そうこうしているうちに時間がなくなってきた
