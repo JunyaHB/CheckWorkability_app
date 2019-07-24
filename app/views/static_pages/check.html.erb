@@ -1,9 +1,13 @@
 <h1>質問</h1>
-
-<form method="post" action="/evaluation/result">
 <h3>問1<h3>
 <p>あなたの人付き合いのモットーに、一番近いことわざはどれですか？<p>
 <br/>
+<!--
+<form method="post" action="/evaluation/result">
+-->
+
+<%= form_for @user do |f| %>
+
 
 <!--
 <%= radio_button 'q1', 'category', 'yes', {} %>はい
