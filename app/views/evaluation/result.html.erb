@@ -1,7 +1,91 @@
 <h1>Evaluation#result</h1>
 <p>Find me in app/views/evaluation/result.html.erb</p>
 <p>
-<%= 
+<%
+#require 'pp'
+#pp params
+score1 = 0
+
+case params[:q11]
+when 'a' then
+  score1 += 2
+when 'b' then
+  score1 += 3
+when "c" then
+  score1 += 4
+else
+  score1 += 1
+end
+
+case params[:q12]
+when 'a' then
+  score1 += 2
+when 'b' then
+  score1 += 4
+when "c" then
+  score1 += 3
+else
+  score1 += 1
+end
+
+case params[:q13]
+when 'a' then
+  score1 += 4
+when 'b' then
+  score1 += 3
+when "c" then
+  score1 += 2
+else
+  score1 += 1
+end
+
+case params[:q14]
+when 'a' then
+  score1 += 2
+when 'b' then
+  score1 += 1
+when "c" then
+  score1 += 3
+else
+  score1 += 4
+end
+
+case params[:q15]
+when 'a' then
+  score1 += 2
+when 'b' then
+  score1 += 4
+when "c" then
+  score1 += 1
+else
+  score1 += 3
+end
+
+case params[:q16]
+when 'a' then
+  score1 += 4
+when 'b' then
+  score1 += 3
+when "c" then
+  score1 += 2
+else
+  score1 += 1
+end
+
+if score1 >= 21 then
+    result1 = "会社のことまできちんと考えて、仕事をするタイプです。"
+elsif score1 >= 15 then
+    result1 = "上司に不満があっても、安易にやめないようにしましょう。"
+elsif score1 >= 8 then
+    result1 = "ミスをして上司や先輩に叱咤されたとき、会社への忠誠心は一気に低くなります。"
+else
+    result1 = "仕事を一生懸命にするのは、あくまでキャリアアップのためで会社のためではありません。"
+end
+%>
+<p><%= score1 %>点</p>
+<p>寸評
+<%= result1 %></p>
+<% 
 "回答 = #{params[:q11]}, #{params[:q12]}, #{params[:q13]}, \
 #{params[:q14]}, #{params[:q15]}, #{params[:q16]}" 
 %>
