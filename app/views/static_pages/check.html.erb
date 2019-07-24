@@ -9,27 +9,52 @@
 <%= radio_button 'q1', 'category', 'yes', {} %>はい
 <%= radio_button 'q1', 'category', 'no', {} %>いいえ
 -->
-<input type="radio" name="q11" value="a">「去る者は追わず」<br />
-<input type="radio" name="q11" value="b">「袖触れ合うも他生の縁」<br />
-<input type="radio" name="q11" value="c">「親しきなかにも礼儀あり」<br />
-<input type="radio" name="q11" value="d">「情けは人のためならず」<br />
-
+<p>
+<label><input type="radio" name="q11" value="a">「去る者は追わず」</label><br />
+<label><input type="radio" name="q11" value="b">「袖触れ合うも他生の縁」</label><br />
+<label><input type="radio" name="q11" value="c">「親しきなかにも礼儀あり」</label><br />
+<label><input type="radio" name="q11" value="d">「情けは人のためならず」</label><br />
+</p>
 <h3>問2<h3>
 <p>ドラえもんのキャラクターで、あなたがあまり好きでないのは、次の4人のうち誰ですか？<p>
 <br/>
 
-<input type="radio" name="q12" value="a">ジャイアン<br />
-<input type="radio" name="q12" value="b">スネ夫<br />
-<input type="radio" name="q12" value="c">のび太<br />
-<input type="radio" name="q12" value="d">しずかちゃん<br />
+<label><input type="radio" name="q12" value="a">ジャイアン</label><br />
+<label><input type="radio" name="q12" value="b">スネ夫</label><br />
+<label><input type="radio" name="q12" value="c">のび太</label><br />
+<label><input type="radio" name="q12" value="d">しずかちゃん</label><br />
 
 <h3>問3<h3>
 <p>あなたは責任ある仕事を任されました。先輩が手を貸してくれましたが、結局失敗。上司に対して「自分が悪かった」と謝る先輩の横で、あなたはどうしますか？<p>
 
-<input type="radio" name="q13" value="a">どちらが悪いということではなく、一緒に謝り続ける<br />
-<input type="radio" name="q13" value="b">黙って何も言わない<br />
-<input type="radio" name="q13" value="c">あくまでも先輩はフォローであり、責任は自分にあると謝る<br />
-<input type="radio" name="q13" value="d">先輩の教え方が悪かったと、上司に訴える<br />
+<label><input type="radio" name="q13" value="a">どちらが悪いということではなく、一緒に謝り続ける</label><br />
+<label><input type="radio" name="q13" value="b">黙って何も言わない</label><br />
+<label><input type="radio" name="q13" value="c">あくまでも先輩はフォローであり、責任は自分にあると謝る</label><br />
+<label><input type="radio" name="q13" value="d">先輩の教え方が悪かったと、上司に訴える</label><br />
+
+<h3>問4<h3>
+<p>恋人とのデートの日。恋人は最近仕事が忙しかったのか少々疲れ気味の様子です。さて、あなたはそんな彼に対してどんな態度を取りますか？<p>
+
+<label><input type="radio" name="q14" value="a">元気づけようと、あちこち楽しい場所に連れ回す</label><br />
+<label><input type="radio" name="q14" value="b">「せっかくのデートなのに、疲れた顔しないでよ！」と怒る</label><br />
+<label><input type="radio" name="q14" value="c">お茶の時間を増やすなど、恋人を気づかいながらデートを続ける</label><br />
+<label><input type="radio" name="q14" value="d">「疲れているみたいだから、今日は帰ろう」と恋人を気遣う</label><br />
+
+<h3>問5<h3>
+<p>あなたが会社に入社してから数年が経ちました。さて、あなたが仕事に対して考えているのは、どんなことだと思いますか？<p>
+
+<label><input type="radio" name="q15" value="a">「残業ヤダな！」</label><br />
+<label><input type="radio" name="q15" value="b">「もっと実績を上げたいな！」</label><br />
+<label><input type="radio" name="q15" value="c">「早く給料上がらないかな！」</label><br />
+<label><input type="radio" name="q15" value="d">「人間関係をもっとよくしたいな！」</label><br />
+
+<h3>問6<h3>
+<p>「嘘」がつくことわざはたくさんありますが、「嘘」と聞いてあなたが思い浮かべる言葉はどれですか？<p>
+
+<label><input type="radio" name="q16" value="a">嘘も方便</label><br />
+<label><input type="radio" name="q16" value="b">嘘は泥棒の始まり</label><br />
+<label><input type="radio" name="q16" value="c">嘘八百</label><br />
+<label><input type="radio" name="q16" value="d">嘘から出た真</label><br />
 
 <%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post} %>
 </form>
