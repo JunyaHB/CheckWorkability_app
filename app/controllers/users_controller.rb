@@ -43,7 +43,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: '登録出来ませんでした' }
+        format.html { redirect_to @user, notice: '登録出来ました' }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
@@ -70,6 +70,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:email)
+      params.require(:user).permit(:email, :score1)
     end
 end

@@ -12,6 +12,7 @@ fujikawa0724での改変
 * DBにscore1カラムを追加
 * /usersでDBを見たときにもscore1カラムを追加
 * editページにもscore1を追加
+* score1のupdateに対応
 
 今後の予定
 * トップページから診断ページの遷移をすり合わせる。TakeshiHoraのプルリクエスト#8でいいと思う。
