@@ -1,9 +1,5 @@
 <body>
-    <h1>仕事力診断</h1>
-    <%= form_for(@user) do |f| %>
-    <%= f.text_field :email %>
-    <%= f.submit "登録" %>
-    <%= link_to 'Back', users_path %>
-    <%= button_to "診断開始", {controller: 'static_pages', action: 'check'}, {method: :get} %>
-    <% end %>
-</body> 
+   <h1>仕事力診断を試してみる!</h1>
+   <p class="discription">※診断結果のメール配信も行っておりますので、ご利用下さい</p>
+   <a href="/static_pages/check"  class="startbutton">診断開始</a>
+</body>
