@@ -37,7 +37,7 @@
 * 結果がerbで出るようにした。
 * questions1ファイルを追加
 * 結果をスコアにして合計した値を表示、値により寸評を表示
-* DBにscore1カラムを追加
+* Usersモデル(DB)にscore1カラムを追加
 * /usersでDBを見たときにもscore1カラムを追加
 * editページにもscore1を追加
 * score1のupdateに対応
