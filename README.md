@@ -39,7 +39,7 @@ WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecat
 ## 主な担当範囲
 * JunyaHB: 開始ページ、全体の背景、bootstrap周り
 * TakeshiHora: 開始ページ、全体のページ遷移周り
-* aiitkf: 設問ページ、結果表示の部分の計算など「動く」ところ、必要なマージ作業
+* aiitkf: 設問ページ、結果表示の部分の計算など「動く」ところ
 * TakuyaKodama1014: 診断結果ページ、結果を収納するDB周り
 
 ## fujikawa0724での改変
@@ -64,3 +64,4 @@ WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecat
 * 持ち寄ったデザインの改変と、機能の改変でマージさせるとうまく行った
 * チームで別々に作ったコードをマージすると、一応動くと言えるものができた
 * そうこうしているうちに時間がなくなってきた←いまここ
+
