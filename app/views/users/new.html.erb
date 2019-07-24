@@ -1,9 +1,5 @@
-<div class="main-container">
-<img src = "/logoimage.png" alt="Mountain View" style="width:350px;height:100px;">
-<h1>適職診断開始！！</h1>
-  
-<%= form_for(@user) do |f| %>
-  <%= f.text_field :email %>
-  <%= button_to "診断開始", {controller: 'static_pages', action: 'check'}, {method: :get} %>
-<% end %>
-</div>
+<body>
+   <h1>仕事力診断を試してみる!</h1>
+   <p class="discription">※診断結果のメール配信も行っておりますので、ご利用下さい</p>
+   <a href="/static_pages/check"  class="startbutton">診断開始</a>
+</body>
