@@ -32,6 +32,20 @@
 <input type="radio" name="q13" value="d">先輩の教え方が悪かったと、上司に訴える<br />
 
 <%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post} %>
+
+<%= form_for(@user, controller: 'evaluation', action: 'create', method: :post) do |f| %>
+    <p>
+        <%= f.label :score, "スコア" %><br>
+        <%= f.text_field :score %>
+    </p>
+    <p>
+        <%= f.label :email, "メールアドレス" %><br>
+        <%= f.email_field :email %>
+    </p>
+
+    <%= f.submit "登録する"%>
+<% end %>
+
 </form>
 
 
