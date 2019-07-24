@@ -29,8 +29,6 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        respond_to do |format|
-      if @user.save
         format.html { redirect_to @user, notice: '登録出来ました' }
         format.json { render :show, status: :created, location: @user }
       else
