@@ -22,6 +22,7 @@ WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecat
 * 結果をDBに入れる、ここでRESTっぽい動きにできないか？
 * メールを送信するか、ツイッター連携
 * 問題数を増やす
+* 選択肢の順番がランダムに入れ替わるようにする
 
 ## 検討したけどたぶんボツになったこと
 * 最初にメールアドレスを入力させて、hidden属性のinputで値を渡す  
