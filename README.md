@@ -14,6 +14,8 @@ WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecat
 結果の詳細を追記
 * check.html.erb  
 "忠誠心度チェック"の文字列を追記
+<%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post, class: 'startbutton'} %>
+JunyaJBとの協力でボタンをかっこよくした
 
 ## 24-Jul-2019までの実装
 * 最初から最後までの画面遷移には成功したので、一応動く物ができたと言えるようになった

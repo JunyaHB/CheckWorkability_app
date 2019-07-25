@@ -52,7 +52,8 @@
 <label><input type="radio" name="q16" value="c">嘘八百</label><br />
 <label><input type="radio" name="q16" value="d">嘘から出た真</label><br />
 
-<%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post} %>
+<%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post, class: 'startbutton'} %>
+<%# button_to "診断結果確認", {class: 'startbutton'}, {controller: 'evaluation', action: 'result'}, {method: :post} %>
 </form>
 
 
