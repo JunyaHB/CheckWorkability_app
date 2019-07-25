@@ -6,7 +6,12 @@
 ---
 ## fujikawa07261での改変箇所
 * check.html.erb
-ボタンのデザインを修正
+ボタンのデザインを修正→link_toではうまくpostしないのでbutton_toに戻す  
+* result.html.erb
+素点をスコアとして表示  
+25-100点の評点を表示  
+寸評の詳細を表示  
+未回答の質問があるときは表示  
 
 ## fujikawa0726での改変箇所
 * Gemfile  
