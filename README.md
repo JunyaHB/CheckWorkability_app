@@ -17,6 +17,10 @@ WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecat
 <%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post, class: 'startbutton'} %>
 JunyaJBとの協力でボタンをかっこよくした
 
+## takeshihora修正
+* 会社概要の修正
+* 問合せ先の修正				
+
 ## 24-Jul-2019までの実装
 * 最初から最後までの画面遷移には成功したので、一応動く物ができたと言えるようになった
 
