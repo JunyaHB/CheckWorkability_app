@@ -5,9 +5,9 @@
 
 ---
 ## fujikawa07261での改変箇所
-* check.html.erb
+* check.html.erb  
 ボタンのデザインを修正→link_toではうまくpostしないのでbutton_toに戻す  
-* result.html.erb
+* result.html.erb  
 素点をスコアとして表示  
 25-100点の評点を表示  
 寸評の詳細を表示  
