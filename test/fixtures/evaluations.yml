@@ -4,8 +4,10 @@ one:
   score: MyString
   email: MyString
   created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
 
 two:
   score: MyString
   email: MyString
   created_at: <%= Time.zone.now %>
+  updated_at: <%= Time.zone.now %>
