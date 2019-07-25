@@ -1,55 +1,62 @@
-<h1>質問</h1>
-
+<body class="check">
 <form method="post" action="/evaluation/result">
-<h3>問1<h3>
-<p>あなたの人付き合いのモットーに、一番近いことわざはどれですか？<p>
-<br/>
+<p class="question">&ensp;あなたの人付き合いのモットーに、一番近いことわざはどれですか？<p>
+</br>
 
 <!--
 <%= radio_button 'q1', 'category', 'yes', {} %>はい
 <%= radio_button 'q1', 'category', 'no', {} %>いいえ
 -->
-<p>
+
 <label><input type="radio" name="q11" value="a">「去る者は追わず」</label><br />
 <label><input type="radio" name="q11" value="b">「袖触れ合うも他生の縁」</label><br />
 <label><input type="radio" name="q11" value="c">「親しきなかにも礼儀あり」</label><br />
 <label><input type="radio" name="q11" value="d">「情けは人のためならず」</label><br />
-</p>
-<h3>問2<h3>
-<p>ドラえもんのキャラクターで、あなたがあまり好きでないのは、次の4人のうち誰ですか？<p>
-<br/>
+
+</br></br></br>
+
+<p class="question">&ensp;ドラえもんのキャラクターで、あなたがあまり好きでないのは、次の4人のうち誰ですか？<p>
+</br>
 
 <label><input type="radio" name="q12" value="a">ジャイアン</label><br />
 <label><input type="radio" name="q12" value="b">スネ夫</label><br />
 <label><input type="radio" name="q12" value="c">のび太</label><br />
 <label><input type="radio" name="q12" value="d">しずかちゃん</label><br />
 
-<h3>問3<h3>
-<p>あなたは責任ある仕事を任されました。先輩が手を貸してくれましたが、結局失敗。上司に対して「自分が悪かった」と謝る先輩の横で、あなたはどうしますか？<p>
+</br></br></br>
+
+<p class="question">&ensp;あなたは責任ある仕事を任されました。先輩が手を貸してくれましたが、結局失敗。</br>&ensp;上司に対して「自分が悪かった」と謝る先輩の横で、あなたはどうしますか？<p>
+</br>
 
 <label><input type="radio" name="q13" value="a">どちらが悪いということではなく、一緒に謝り続ける</label><br />
 <label><input type="radio" name="q13" value="b">黙って何も言わない</label><br />
 <label><input type="radio" name="q13" value="c">あくまでも先輩はフォローであり、責任は自分にあると謝る</label><br />
 <label><input type="radio" name="q13" value="d">先輩の教え方が悪かったと、上司に訴える</label><br />
 
-<h3>問4<h3>
-<p>恋人とのデートの日。恋人は最近仕事が忙しかったのか少々疲れ気味の様子です。さて、あなたはそんな彼に対してどんな態度を取りますか？<p>
+</br></br></br>
+
+<p class="question">&ensp;恋人とのデートの日。恋人は最近仕事が忙しかったのか少々疲れ気味の様子です。</br>&ensp;さて、あなたはそんな彼に対してどんな態度を取りますか？<p>
+</br>
 
 <label><input type="radio" name="q14" value="a">元気づけようと、あちこち楽しい場所に連れ回す</label><br />
 <label><input type="radio" name="q14" value="b">「せっかくのデートなのに、疲れた顔しないでよ！」と怒る</label><br />
 <label><input type="radio" name="q14" value="c">お茶の時間を増やすなど、恋人を気づかいながらデートを続ける</label><br />
 <label><input type="radio" name="q14" value="d">「疲れているみたいだから、今日は帰ろう」と恋人を気遣う</label><br />
 
-<h3>問5<h3>
-<p>あなたが会社に入社してから数年が経ちました。さて、あなたが仕事に対して考えているのは、どんなことだと思いますか？<p>
+</br></br></br>
+
+<p class="question">&ensp;あなたが会社に入社してから数年が経ちました。</br>&ensp;さて、あなたが仕事に対して考えているのは、どんなことだと思いますか？<p>
+</br>
 
 <label><input type="radio" name="q15" value="a">「残業ヤダな！」</label><br />
 <label><input type="radio" name="q15" value="b">「もっと実績を上げたいな！」</label><br />
 <label><input type="radio" name="q15" value="c">「早く給料上がらないかな！」</label><br />
 <label><input type="radio" name="q15" value="d">「人間関係をもっとよくしたいな！」</label><br />
 
-<h3>問6<h3>
-<p>「嘘」がつくことわざはたくさんありますが、「嘘」と聞いてあなたが思い浮かべる言葉はどれですか？<p>
+</br></br></br>
+
+<p class="question">&ensp;「嘘」がつく諺はたくさんありますが、「嘘」と聞いてあなたが思い浮かべる言葉は？<p>
+</br>
 
 <label><input type="radio" name="q16" value="a">嘘も方便</label><br />
 <label><input type="radio" name="q16" value="b">嘘は泥棒の始まり</label><br />
@@ -58,7 +65,5 @@
 
 <%= button_to "診断結果確認", {controller: 'evaluation', action: 'result'}, {method: :post} %>
 
-
 </form>
-
-
+</body>
