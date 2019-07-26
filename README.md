@@ -6,7 +6,7 @@
 
 ---
 ## Evaluations DB constructでの改変箇所  
-* 結果表示を押した時刻などがActiveRecord経由でDBに保存されるようになった
+* 結果表示を押した時刻および回答の一部がActiveRecord経由でDBに保存されるようになった
 
 ## fujikawa07261での改変箇所
 * check.html.erb  
