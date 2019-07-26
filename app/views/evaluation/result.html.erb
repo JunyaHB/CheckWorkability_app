@@ -1,9 +1,6 @@
 <h1>診断結果</h1>
 
-<p>
 <%
-#require 'pp'
-#pp params
 score1 = 0
 
 case params[:q11]
@@ -132,8 +129,3 @@ end
 <h3>寸評</h3>
 <p><%= result1 %></p>
 <p><%= result2 %></p>
-<%# 
-"回答 = #{params[:q11]}, #{params[:q12]}, #{params[:q13]}, \
-#{params[:q14]}, #{params[:q15]}, #{params[:q16]}" 
-%>
-</p>
