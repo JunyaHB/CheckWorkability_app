@@ -3,87 +3,87 @@
 class EvaluationController < ApplicationController
   def result
     # render html: "回答 = #{params[:q11]}, #{params[:q12]}, #{params[:q13]}, #{params[:q14]}, #{params[:q15]}, #{params[:q16]}"
-    score1 = 0
+    score = 0
 
     case params[:q11]
     when 'a' then
-      score1 += 2
+      score += 2
     when 'b' then
-      score1 += 3
+      score += 3
     when "c" then
-      score1 += 4
+      score += 4
     when "d" then
-      score1 += 1
+      score += 1
     else
-      score1 -= 25
+      score -= 25
     end
     
     case params[:q12]
     when 'a' then
-      score1 += 2
+      score += 2
     when 'b' then
-      score1 += 4
+      score += 4
     when "c" then
-      score1 += 3
+      score += 3
     when "d" then
-      score1 += 1
+      score += 1
     else
-      score1 -= 25
+      score -= 25
     end
     
     case params[:q13]
     when 'a' then
-      score1 += 4
+      score += 4
     when 'b' then
-      score1 += 3
+      score += 3
     when "c" then
-      score1 += 2
+      score += 2
     when "d" then
-      score1 += 1
+      score += 1
     else
-      score1 -= 25
+      score -= 25
     end
     
     case params[:q14]
     when 'a' then
-      score1 += 2
+      score += 2
     when 'b' then
-      score1 += 1
+      score += 1
     when "c" then
-      score1 += 3
+      score += 3
     when "d" then
-      score1 += 4
+      score += 4
     else
-      score1 -= 25
+      score -= 25
     end
     
     case params[:q15]
     when 'a' then
-      score1 += 2
+      score += 2
     when 'b' then
-      score1 += 4
+      score += 4
     when "c" then
-      score1 += 1
+      score += 1
     when "d" then
-      score1 += 3
+      score += 3
     else
-      score1 -= 25
+      score -= 25
     end
     
     case params[:q16]
     when 'a' then
-      score1 += 4
+      score += 4
     when 'b' then
-      score1 += 3
+      score += 3
     when "c" then
-      score1 += 2
+      score += 2
     when "d" then
-      score1 += 1
+      score += 1
     else
-      score1 -= 25
+      score -= 25
     end
 
-    @evaluations = Evaluations.create(score: score1, email: "")
+    @evaluations = Evaluations.create(score: score, email: "")
   end
 
 
