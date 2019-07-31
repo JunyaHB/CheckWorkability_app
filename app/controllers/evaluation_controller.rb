@@ -87,10 +87,6 @@ class EvaluationController < ApplicationController
   end
 
 
-  def score_calc
-
-  end
-
 #  def new
 #    @user = User.new
 #  end
