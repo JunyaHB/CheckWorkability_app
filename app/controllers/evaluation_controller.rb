@@ -83,7 +83,7 @@ class EvaluationController < ApplicationController
       score1 -= 25
     end
 
-    @evaluations = Evaluations.create(score: pscore1, email: "")
+    @evaluations = Evaluations.create(score: score1, email: "")
   end
 
 
